@@ -1,0 +1,100 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+h6 {
+  /*font-size: 1em;*/
+  color: #2031D9;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+em {
+  font-size: 1.5em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0A1128;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  padding: 5%;
+}
+
+.card-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /*espaces entre lignes et colonnes*/
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+}
+
+.card {
+  background-color: white;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  /* couleur des titres*/
+  color: #034078;
+}
+
+.myProgress {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  width: 0%;
+  height: 30px;
+  background-color: #ABEBC6;
+}
+
+/*#myBar {
+  width: 50%;
+  height: 20px;
+  background-color: red;
+  text-align: center;  To center it horizontally (if you want) 
+  line-height: 30px;  To center it vertically 
+  color: blue;
+}*/
+
+
+.myProgressContainer {
+  position: absolute;
+  left: 530px;
+  width: 300px;
+  border: solid;
+}
+
+@media screen and (max-width: 720px) {
+  .myProgressContainer {
+    position: absolute;
+    top: 70px;
+    left: 55px;
+    width: 200px;
+  }
+
+  #gauge-Courant {
+    position: absolute;
+    top: 385px;
+    left: 65px;
+  }
+
+  #chargeDecharge {
+    position: absolute;
+    top: 335px;
+    left: 60px;
+  }
+
+}
